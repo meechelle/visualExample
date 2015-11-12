@@ -1,0 +1,15 @@
+html {
+  display: table;
+  margin: auto; }
+
+  #vis {
+  width: 960px;
+  height: 500px; }
+
+  .cell text {
+   cursor: move;
+   font: 10px sans-serif;
+   text-anchor: middle; }
+
+   .cell rect {  
+   stroke: #fff; }

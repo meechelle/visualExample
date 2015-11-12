@@ -1,0 +1,36 @@
+doctype html
+html
+   head
+     title= title
+     script(src="http://d3js.org/d3.v3.min.js" charset="utf-8").
+     script(src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js").
+     script(src="https://rawgit.com/bansaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js").
+     script(src="https://cloud.github.com/downloads/misoproject/dataset/miso.ds.deps.min.0.4.1.js").
+     link(rel='stylesheet', href='/stylesheets/style.css')
+   
+   body
+     script(type='text/javascript').
+        var property = null;
+        function onSubmit(value) {
+           property = value
+        };
+     #vis
+     script(type='text/javascript').
+        (function() {
+           d3.json("flare.json", function(error, json) {
+   
+           var treemap = d3.select("#vis").append("svg")
+             .chart("treemap")
+             .value("size")
+             .sortable("_DESC_")
+             //.zoomable()
+             .collapsible()
+             //.duration()
+             //.colors(['#FF0000', '#00FF00', '#0000FF'])
+             ;
+ 
+            treemap.draw(json);
+
+            });
+
+        }());
