@@ -8,5 +8,5 @@ Example of storing local data in json format and creating a treemap.
 </br>
 <br>
 Example of what it does
-<link href="http://bl.ocks.org/bansaghi/5d24b37ebe077d4e919f">Treemap</link>
+<link href="http://bl.ocks.org/bansaghi/5d24b37ebe077d4e919f">http://bl.ocks.org/bansaghi/5d24b37ebe077d4e919f</link>
 </br>
